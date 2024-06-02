@@ -18,36 +18,9 @@ const page = () => {
         <h2 className="px-4 py-4 text-gray-500 font-bold">Folders</h2>
         <div className="flex items-center ml-4 gap-10 max-sm:flex-col max-sm:items-start">
           <Folder title={"title text"} />
-          <Folder title={"title text"} />
-          <Folder title={"title text"} />
-          <Folder title={"title text"} />
         </div>
         <h2 className="px-4 py-4 text-gray-500 font-bold">Files</h2>
         <div className="px-4 grid-columns">
-           <File />
-           <File />
-           <File />
-           <File />
-           <File />
-           <File />
-           <File />
-           <File />
-           <File />
-           <File />
-           <File />
-           <File />
-           <File />
-           <File />
-           <File />
-           <File />
-           <File />
-           <File />
-           <File />
-           <File />
-           <File />
-           <File />
-           <File />
-           <File />
            <File />
         </div>
       </div>
