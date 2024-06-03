@@ -17,7 +17,8 @@ import CustomInput from './CustomInput';
 import { authFormSchema } from '../../lib/utils';
 import { Loader2 } from 'lucide-react';
 import { useRouter } from 'next/navigation';
-import { signUp, signIn } from '../../lib/firebase';
+import { signUp, signIn, addUserDoc } from '../../lib/firebase';
+
 const AuthForm = ({ type }: { type: string }) => {
   const router = useRouter();
   const [user, setUser] = useState(null);
@@ -57,12 +58,13 @@ const AuthForm = ({ type }: { type: string }) => {
         const newUser = await signUp(userData.email, userData.password);
         setUser(newUser);
         router.push("/");
-
+        
+        addUserDoc(userData);
 
       }
 
       if (type === 'sign-in') {
-        const response = await signIn(data.email, data.password)
+        await signIn(data.email, data.password)
       
        router.push("/")
       }
