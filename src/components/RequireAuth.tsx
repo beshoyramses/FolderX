@@ -9,9 +9,10 @@ const RequireAuth = ({ children }) => {
   const router = useRouter();
 
   useEffect(() => {
-    const storedUser = localStorage.getItem("user");
+    const storedUser = JSON.parse(localStorage.getItem("user"));;
     setCurrentUser(storedUser);
   }, [setCurrentUser,router]);
+
 
   useEffect(() => {
     if (!currentUser) {

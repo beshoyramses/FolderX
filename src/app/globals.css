@@ -386,3 +386,28 @@
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   gap: 40px;
 }
+
+.sidebar-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  color: #6b7280; /* Tailwind gray-500 */
+  padding: 1rem 0.5rem;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.sidebar-item:hover {
+  background-color: #f3f4f6; /* Tailwind gray-100 */
+  color: #374151; /* Tailwind gray-700 */
+}
+
+.sidebar-item-active {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  color: #1f2937; /* Tailwind gray-900 */
+  background-color: #e5e7eb; /* Tailwind gray-200 */
+  padding: 1rem 0.5rem;
+  font-weight: bold;
+  border-left: 4px solid #2563eb; /* Tailwind blue-600 */
+}

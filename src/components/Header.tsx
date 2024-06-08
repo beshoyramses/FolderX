@@ -18,7 +18,7 @@ const Header = () => {
           <input type="text" placeholder='Search' className='bg-gray-200 flex-grow outline-none' />
           <SearchIcon className='text-gray-500' />
         </div>
-        <Image src={"/user.svg"} alt='user' width={35} height={35} />
+        <Image src={"https://avatar.iran.liara.run/public"} alt='user' width={35} height={35} />
       </div>
 
     </header>

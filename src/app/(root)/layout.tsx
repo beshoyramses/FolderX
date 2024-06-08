@@ -1,10 +1,15 @@
 "use client";
 
-import Header from "@/components/Header";
-import Sidebar from "@/components/Sidebar";
-import RequireAuth from "@/components/RequireAuth";
+import React, { ReactNode } from 'react';
+import Header from '@/components/Header';
+import Sidebar from '@/components/Sidebar';
+import RequireAuth from '@/components/RequireAuth';
 
-const RootLayout = ({ children }) => {
+interface Props {
+  children: ReactNode;
+}
+
+const RootLayout: React.FC<Props> = ({ children }) => {
   return (
     <RequireAuth>
       <div>

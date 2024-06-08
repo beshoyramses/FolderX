@@ -16,23 +16,18 @@ export const SidebarLinks = [
         label: "Folders",
     },
     {
-        icon: DeleteIcon,
-        route: "/trash",
-        label: "deleted folders",
-    },
-    {
         icon: ScheduleIcon,
-        route: "/recent",
+        route: "/recent-files",
         label: "Recent files",
     },
     {
         icon: DeleteIcon,
-        route: "/trash",
-        label: "deleted folders",
+        route: "/deleted-files",
+        label: "deleted files",
     },
     {
         icon: StarRateIcon,
-        route: "/starred",
+        route: "/stared-files",
         label: "Starred Files",
     }
     

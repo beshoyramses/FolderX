@@ -59,7 +59,7 @@ const AuthForm = ({ type }: { type: string }) => {
         setUser(newUser);
         router.push("/");
         
-        addUserDoc(userData);
+        await addUserDoc(userData);
 
       }
 
